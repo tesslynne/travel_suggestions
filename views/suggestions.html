@@ -1,26 +1,29 @@
-<h2 class="page-title">{{post.title}}</h2>
-<hr>
+<div class="well well-sm">
+	<h4 class="title">{{post.title}}</h4>
 
-<!--for comments-->	
-	<div class="comment comment-body" ng-if="posts.comments.length === 0">Nothing here yet. Start the conversation!</div>
 
-		<div ng-repeat="comment in post.comments | orderBy: '-upvotes'">
-			<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)">{{comment.upvotes}}</span>
-			<span class="comment-body">
-			{{comment.body}}
-			</span>
-			
-		</div>
+	<!--for comments-->	
 
-<!--for adding comments-->
-	<form ng-submit="addComment()" style="margin-top:20px">
-		<h3>Got something to add?</h3>
+			<div ng-repeat="comment in post.comments | orderBy: '-upvotes'">
+				<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)">{{comment.upvotes}}</span>
+				<span class="comment-body">
+				{{comment.body}}
+				</span>
+				
+			</div>
 
-		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Contribute to the idea here!" ng-model="body"></input>
-		</div>
-		<button type="submit" class="btn btn-success">Comment</button>
-	</form>
+	<!--for adding comments-->
+		<form ng-submit="addComment()" style="margin-top:20px">
+			<h5>Got something to add?</h5>
+
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Contribute to the idea here!" ng-model="body"></input>
+			</div>
+			<button type="submit" class="btn btn-success">Comment</button>
+			<br>
+			<a href="#/home">Return Home</a>
+		</form>
+	</div>
 	
 
 

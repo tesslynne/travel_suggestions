@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Suggestion Box</title>
 
@@ -10,22 +11,29 @@
 	<script type="text/javascript" src="js/vendors/angular.min.js"></script>
 	<!--Angular routing-->
 	<script type="text/javascript" src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
-
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<!--styles-->
-
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
 	css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body ng-app="SuggestionBox">
-	<div class="row">
-	
 
-	
-      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-      <h1>Suggestion Box</h1>
-        <div ng-view></div>
-      </div>
-    </div>
+	<div class="jumbotron">
+		<h1>travel <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> ideas </h1>
+	</div>
+
+	<div class="container">
+			<div class="row">
+			      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+			        <div ng-view></div>
+			      </div>
+			</div>
+	</div>
+
+
+
 
 
 	<!--Modules-->
