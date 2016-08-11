@@ -1,28 +1,34 @@
-app.factory('suggestions', [function(){
+app.factory('suggestions', [function() {
 	var demoSuggestions = {
 		posts: [
 			{
-			 title: 'Free pizza at meetings',
+			 title: 'Florence, Italy',
 			 upvotes: 15, 
-			 comments: []
+			 comments: [],
+			 id: 0
+
 			},
 			{
-			 title: 'Yoga at your workplace',
+			 title: 'Zion National Park',
 			 upvotes: 9,
-			 comments: []
+			 comments: [],
+			 id: 1
 			},
 			{
-			 title: 'Retrofit my life',
-			 upvotes: 7,
-			 comments: []
+			 title: 'Thailand',
+			 upvotes: 20,
+			 comments: [],
+			 id: 2
 			},
 			{
-			 title: 'Sing Lady Gaga\'s "Bad Romance" halfway through meetings',
+			 title: 'Iceland',
 			 upvotes: 4,
 			 comments: [],
+			 id: 3
 			}
-		]
+			]
+		
 
-	}
+	};
 	return demoSuggestions;
 }]);
